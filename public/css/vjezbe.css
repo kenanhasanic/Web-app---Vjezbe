@@ -1,0 +1,178 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    margin: 0px;
+}
+
+ul{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+li{
+    width: 100%;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+a{
+    color:whitesmoke;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#meni ul li:hover a{
+    color: rgb(51, 50, 50);
+}
+
+#meni{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98px;
+    background-color: #4D7B93;
+    display: flex;
+}
+
+#container-podaci{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-vjezbe{
+    background-color: #b8b8b8;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px 5px 0px;
+    height: auto;
+}
+
+.vjezba{
+    color: #DDDDDD;
+    width: 98%;
+    background-color: #2E0F38;
+    height: auto;
+    margin: 2px 1% 2px 1%;
+    text-align: center;
+}
+
+.vjezba:hover{
+    background: #2e0f386c;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.zadaci{
+    background-color: #b8b8b8;
+    width: 98%;
+    padding: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+.zadatak{
+    width: 100%;
+    text-align: center;
+    margin-top: 1%;
+    margin-right: 1%;
+    background-color: #2e0f389c;
+}
+
+.zadatak:hover {
+    background: #b8b8b8;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.grafovi{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.graf{
+   width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.naslov{
+    text-align: center;   
+}
+
+
+
+
+@media screen and (min-width: 500px) {
+
+
+    #container-podaci{
+        flex-direction: column;
+    }
+
+    #odabirVjezbe{
+        width: 100%;
+    }
+    .grafovi{
+        width: 100%;
+    }
+
+    .grid-item {
+        
+        width: 100px;
+    }
+
+    .graf{
+        width: 100%;
+    }
+    
+    .zadaci{
+        background-color: #b8b8b8;
+        width: 98%;
+        padding: 1%;
+    }
+
+    .zadatak{
+        width: 48%;
+    }
+
+    li{
+        display: inline;
+    }
+  }
+  @media screen and (min-width: 800px) {
+
+    
+
+    #odabirVjezbe{
+        width: 33.5%;
+    }
+    .grafovi{
+        width: 66.5%;
+    }
+    #container-podaci{
+        flex-direction: row;
+    }
+
+    .graf{
+        width: 50%;
+     }
+
+     .zadatak{
+        width: 23.5%;
+    }
+      
+  }

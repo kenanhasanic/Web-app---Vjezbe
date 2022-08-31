@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/unosVjezbi.css">
+    
+    <title>UnosVjezbi</title>
+    <meta name="description" content="Our first page">
+    <meta name="keywords" content="html tutorial template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="meni">
+        <h2>Meni</h2>
+        <ul class="navigacija">
+            <li id="grupelnk"><a href="../html/grupe.html">Grupe</a></li>
+            <li id="vjezbelnk"><a href="../html/vjezbe.html">Vježbe</a></li>
+            <li id="mojRepozitorijlnk"><a href="../html/mojRepozitorij.html">Moj Repozitorij</a></li>
+            <li id="zadacilnk"><a href="../html/zadaci.html">Zadaci</a></li>
+            <li id="unosVjezbilnk"><a href="../html/unosVjezbi.html">Unos Vježbi</a></li>
+            <li id="dodajStudentalnk"><a href="../html/formaDodajStudenta.html">Dodaj Studenta</a></li>
+            <li id="postaviGrupulnk"><a href="../html/formaPostaviGrupu.html">Postavi Grupu</a></li>
+            <li id="dodajBatchlnk"><a href="../html/formaDodajBatch.html">Dodaj Batch</a></li>
+        </ul>
+    </div>
+    <div id="container-podaci">
+        <div class="forma">
+            <form id="form">
+                <label for="brojVj">  <p id="brojVjezbi">Unesite broj vježbi:</p></label><br>
+                <input type="number" id="brojVj" name="brojVj"><br>
+                
+                <input type="button" id="dugme" value="Posalji">
+                <input type="button" id="dugmeZaPostavku"  value="Unesi vježbe">
+                <div id="brojZadataka"></div>
+            </form>
+            
+        </div>
+    </div>
+
+
+</body>
+<script src="../js/unosVjezbi.js"></script>
+    <script src="../js/VjezbeAjax.js"></script>
+</html>

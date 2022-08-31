@@ -1,0 +1,204 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    margin: 0px;
+}
+
+ul{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+li{
+    width: 100%;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+#meni ul li:hover a{
+    color: rgb(51, 50, 50);
+}
+
+a{
+    color:whitesmoke;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#meni{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98px;
+    background-color: #4D7B93;
+    display: flex;
+}
+
+#container-podaci{
+    width: 100%;
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+}
+
+.naslov{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;   
+}
+
+#studenti{
+    height: 50%;
+    order:1;
+    display: flex;
+    width: 100%;
+}
+
+#grupe{
+    display: flex;
+    flex-direction: column;
+    order:0;
+    width: 100%;
+}
+
+.grid-container {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    /* justify-content: space-evenly; */
+}
+
+.grid-item {
+    border-radius: 7px;
+    margin: 5px;
+    background-color:#4d7a9334;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.grid-item:hover {
+    background:white;
+    border-style: solid;
+    border-width: 2px;
+}
+
+
+
+.studenti_polje{
+    margin: 2px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabela thead tr {
+    background-color: #2E0F38;
+    color: #ffffff;
+    text-align: left;
+}
+
+.tabela{
+    margin:auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 90%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.tabela th{
+    background-color: #2E0F38;
+    color: #dddddd;
+}
+
+.tabela th, .tabela td {
+    padding: 12px 15px;
+}
+
+.tabela tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.tabela tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.tabela tbody tr:last-of-type {
+    border-bottom: 2px solid #2E0F38;
+}
+
+.tabela tbody tr.active-row {
+    font-weight: bold;
+    color: #2E0F38;
+}
+
+table th:nth-of-type(n+2){
+    display: none;
+}
+table td:nth-of-type(n+2){
+    display: none;
+}
+
+@media screen and (min-width: 500px) {
+
+    table th:nth-of-type(n+2){
+        display: table-cell;
+    }
+    table td:nth-of-type(n+2){
+        display: table-cell;
+    }
+
+    #studenti{
+        width: 100%;
+        order: 1;
+    }
+    #grupe{
+        width: 100%;
+        order: 0;
+    }
+
+
+
+    #container-podaci{
+        flex-direction: column;
+    }
+
+    .grid-item {
+        
+        width: 100px;
+    }
+
+    li{
+        display: inline;
+    }
+  }
+  @media screen and (min-width: 800px) {
+
+    #studenti{
+        width: 60%;
+        order: 0;
+    }
+    #grupe{
+        order: 1;
+        width: 40%;
+    }
+    #container-podaci{
+        flex-direction: row;
+    }
+      
+  }

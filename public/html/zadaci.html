@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/zadaci.css">
+    <title>Zadaci</title>
+    <meta name="description" content="Our first page">
+    <meta name="keywords" content="html tutorial template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="meni">
+        <h2>Meni</h2>
+        <ul class="navigacija">
+            <li id="grupelnk"><a href="../html/grupe.html">Grupe</a></li>
+            <li id="vjezbelnk"><a href="../html/vjezbe.html">Vježbe</a></li>
+            <li id="mojRepozitorijlnk"><a href="../html/mojRepozitorij.html">Moj Repozitorij</a></li>
+            <li id="zadacilnk"><a href="../html/zadaci.html">Zadaci</a></li>
+            <li id="unosVjezbilnk"><a href="../html/unosVjezbi.html">Unos Vježbi</a></li>
+            <li id="dodajStudentalnk"><a href="../html/formaDodajStudenta.html">Dodaj Studenta</a></li>
+            <li id="postaviGrupulnk"><a href="../html/formaPostaviGrupu.html">Postavi Grupu</a></li>
+            <li id="dodajBatchlnk"><a href="../html/formaDodajBatch.html">Dodaj Batch</a></li>
+        </ul>
+    </div>
+    <div id="container-podaci">
+        <div class="forma">
+            <form id="form1">
+                <label for="odabirVjezbe">
+                    <p id="odabirVjezbeLabel">Odabir vjezbe:</p>
+                </label><br>
+                <select name="odabirVjezbe" id="odabirVjezbe">
+
+                    <option value="vjezba">Vjezba 1</option>
+                    <option value="vjezba">Vjezba 2</option>
+                    <option value="vjezba">Vjezba 3</option>
+                    <option value="vjezba">Vjezba 4</option>
+                    <option value="vjezba">Vjezba 5</option>
+                    <option value="vjezba">Vjezba 6</option>
+
+                </select> <br>
+                <label for="odabirZadatka">
+                    <p id="odabirZadatkaLabel">Odabir zadatka:</p>
+                </label><br>
+                <select name="odabirZadatka" id="odabirZadatka">
+                    <option value="zadatak">Zadatak 1</option>
+                    <option value="zadatak">Zadatak 2</option>
+                    <option value="zadatak">Zadatak 3</option>
+                    <option value="zadatak">Zadatak 4</option>
+                    <option value="zadatak">Zadatak 5</option>
+                    <option value="zadatak">Zadatak 6</option>
+                </select><br>
+                <label for="odabirVerzije">
+                    <p id="odabirVerzijeLabel">Odabir verzije:</p>
+                </label><br>
+                <select name="odabirVerzije" id="odabirVerzije">
+                    <option value="verzija">Verzija 1</option>
+                    <option value="verzija">Verzija 2</option>
+                    <option value="verzija">Verzija 3</option>
+                    <option value="verzija">Verzija 4</option>
+                    <option value="verzija">Verzija 5</option>
+                    <option value="verzija">Verzija 6</option>
+                </select><br>
+                <label for="komentar">
+                    <p id="komentarLabel">Komentar:</p>
+                </label><br>
+                <textarea name="komentar" id="komentar" type="texarea"></textarea>
+                <br><br>
+                <input type="submit" id="dugme1" value="Posalji">
+            </form>
+        </div>
+        <div class="forma">
+            <form id="form2">
+                <label for="errors">
+                    <p id="errorLabel">Errors-log:</p>
+                </label><br>
+                <textarea name="errors" id="errors" type="texarea"></textarea>
+                <br>
+                <label for="greske"><p id="greskaLabel">Bez grešaka:</p></label><br>
+                <input id="greske" name="greske" type="checkbox">
+                <br><br>
+                <input type="submit" id="dugme2" value="Posalji">
+            </form>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

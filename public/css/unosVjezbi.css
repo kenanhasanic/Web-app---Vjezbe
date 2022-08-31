@@ -1,0 +1,97 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    margin: 0px;
+}
+
+ul{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+li{
+    width: 100%;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+a{
+    color:whitesmoke;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#meni ul li:hover a{
+    color: rgb(51, 50, 50);
+}
+
+#meni{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98px;
+    background-color: #4D7B93;
+    display: flex;
+}
+
+#form{
+    justify-content: center;
+    width: 25%;
+    text-align: center;
+    border: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: #4d7a9370;
+    padding-bottom: 20px;
+}
+
+
+.forma{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0px 20px 0px;
+}
+
+
+input{
+    border-radius: 15px;
+    background-color: #4d7a9334;
+    width: 90%;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#brojVj{
+    margin-bottom: 10px;
+}
+
+#brojZadataka{
+    margin-top: 30px;
+}
+
+
+#form p{
+    padding-top: 15px;
+    margin: 0px;
+}
+
+
+
+@media screen and (min-width: 500px) {
+    li{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+}

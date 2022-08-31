@@ -1,0 +1,153 @@
+@objects
+	body body
+	meni #meni
+	grupelnk #grupelnk
+	vjezbelnk #vjezbelnk
+	podaci #container-podaci
+	forma .forma
+
+	form1 #form1
+	odabirVjezbe #odabirVjezbe
+	odabirZadatka #odabirZadatka
+	odabirVerzije #odabirVerzije
+	komentar #komentar
+	odabirVjezbeLabel #odabirVjezbeLabel
+	odabirZadatkaLabel #odabirZadatkaLabel
+	odabirVerzijeLabel #odabirVerzijeLabel
+	komentarLabel #komentarLabel
+	dugme1 #dugme1
+
+	form2 #form2
+	errors #errors
+	greske #greske
+	errorLabel #errorLabel
+	greskaLabel #greskaLabel
+	dugme2 #dugme2
+
+
+= Width section =
+	podaci:
+		width 98 to 100 % of body/width
+	meni:
+		width 98 to 100 % of body/width
+	forma:
+		width 98 to 100 % of body/width
+
+	form1:
+		width 49 to 51 % of body/width
+	form1:
+		width 49 to 51 % of forma/width
+	odabirVjezbe:
+		width 85 to 95 % of form1/width
+	odabirZadatka:
+		width 85 to 95 % of form1/width
+	odabirVerzije:
+		width 85 to 95 % of form1/width
+	komentar:
+		width 85 to 95 % of form1/width
+
+	form2:
+		width 49 to 51 % of body/width
+	form2:
+		width 49 to 51 % of forma/width
+	errors:
+		width 85 to 95 % of form2/width
+	greske:
+		width 85 to 95 % of form2/width
+	
+= Inside section =
+	
+	form1:
+		inside podaci
+	odabirVjezbe:
+		inside form1
+	odabirZadatka:
+		inside form1
+	odabirVerzije:
+		inside form1
+	komentar:
+		inside form1
+
+	form2:
+		inside podaci
+	errors:
+		inside form2
+	greske:
+		inside form2
+
+= Above section =
+	odabirVjezbeLabel:
+		above odabirVjezbe
+	odabirZadatkaLabel:
+		above odabirZadatka
+	odabirVerzijeLabel:
+		above odabirVerzije
+	komentarLabel:
+		above komentar
+
+	errorLabel:
+		above errors
+	greskaLabel:
+		above greske
+
+= Below section =
+	podaci:
+		below meni
+	dugme1:
+		below komentar
+	dugme2:
+		below greske
+= Visible section =
+	meni:
+		visible 
+	grupelnk:
+		visible 
+	vjezbelnk :
+		visible 
+	podaci:
+		visible 
+	forma:
+		visible 
+
+	form1:
+		visible  
+	odabirVjezbe:
+		visible 
+	odabirZadatka :
+		visible 
+	odabirVerzije :
+		visible 
+	komentar :
+		visible 
+	odabirVjezbeLabel :
+		visible 
+	odabirZadatkaLabel :
+		visible 
+	odabirVerzijeLabel :
+		visible 
+	komentarLabel :
+		visible 
+	dugme1 :
+		visible 
+	form2 :
+		visible 
+	errors:
+		visible 
+	greske :
+		visible 
+	errorLabel :
+		visible 
+	greskaLabel :
+		visible 
+	dugme2 :
+		visible 
+
+= Inside partly section =
+	meni:
+		inside partly body ~0px left, ~0px top
+	form1:
+		inside partly body ~110px top
+	form2:
+		inside partly body ~615px top
+	
+	
